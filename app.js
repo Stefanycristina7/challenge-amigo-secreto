@@ -1,5 +1,5 @@
 let amigos= [];
-
+let sorteados=[];
 /* Essa finção vai fazer com que os amigos sejam adicionados na lista*/ 
 
 function adicionarAmigo(){
@@ -53,4 +53,17 @@ function sortearAmigo() {
     alert('Todos os amigos já foram sorteados!');
     return;
   }
+  let amigoSorteado;
+  do {
+    
+  } while (sorteados.includes(amigoSorteado));/*vai repetir até que os nomes já estejam incluidos na lista de sorteados*/
+  
+  sorteados.push(amigoSorteado);
+
+  let resultadoSorteio = document.getElementById('resultado');
+  resultadoSorteio.textContent = `Ò amigo sorteado foi: ${amigoSorteado}`;
+  atualizarListaDeAmigos();
+  document.getElementById('listaAmigos').textContent = '';
 }
+
+
