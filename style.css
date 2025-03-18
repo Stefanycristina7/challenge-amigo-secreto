@@ -189,21 +189,43 @@ ul {
     border-radius: 5px;
     border: 1px solid #444444;
 }
-@media (max-width: 1000px)  {
+
+@media (max-width: 900px)  {
     body{
         width: 100%;
     }
     .main-content {
-        padding: 15% 5% 15% 5%; /*adicionado por mim*/
+        padding: 8%; /*adicionado por mim*/
+        height: auto;
     }
     .input-section {
  
-        max-width: 400px;
+        max-width: 600px;
         padding: 10px;
         border-radius: 2px;
-      
+        height: 100vh; /* Para ocupar toda a tela */
     }
     ul{
       flex-direction: column;
+    }
+    .header-banner {
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;   
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px; /* Reduzindo o tamanho do padding */
+    }
+    .button-draw {
+            max-width: 250px; /* Ajuste para não ficar gigante */
+            padding: 10px;
+    }
+    .button-container {
+        align-items: center;
+        margin-left: 34px;
+    }
+    .imagem-pricipal{
+        width: 100%;
     }
 }
