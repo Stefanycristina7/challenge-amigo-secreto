@@ -196,4 +196,14 @@ ul {
     .main-content {
         padding: 15% 5% 15% 5%; /*adicionado por mim*/
     }
+    .input-section {
+ 
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 2px;
+      
+    }
+    ul{
+      flex-direction: column;
+    }
 }
