@@ -56,16 +56,15 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    font-family: "Lilita One", sans-serif;
     font-weight: 900;
-    font-style: italic;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
@@ -79,14 +78,15 @@ body {
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
+    gap: 3px;
 }
 
 .input-name {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .button-container {
@@ -98,48 +98,50 @@ body {
 .input-title {
     flex: 1;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: "Lilita One", sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
     border: 2px solid #000;
-    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 5px;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
 ul {
+    max-width: 100%;
+    display: flex; /*foi alterado para deixar a lista em linha*/
+    gap: 4px;
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: #479937;
+    font-size: 1.37rem;
     font-weight: bold;
     text-align: center;
 }
@@ -152,7 +154,8 @@ ul {
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-primary);
-    font-size: 16px;
+    font-size: 1rem;
+    border-radius: 4px;
 }
 
 .button-draw img {
