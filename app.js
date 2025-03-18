@@ -55,7 +55,7 @@ function sortearAmigo() {
   }
   let amigoSorteado;
   do {
-    
+    amigoSorteado = amigos[Math.floor(Math.random()*amigos.length)];
   } while (sorteados.includes(amigoSorteado));/*vai repetir até que os nomes já estejam incluidos na lista de sorteados*/
   
   sorteados.push(amigoSorteado);
