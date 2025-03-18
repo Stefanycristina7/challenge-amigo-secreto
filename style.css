@@ -165,3 +165,27 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/*estilização do botão para remover nome na lista*/
+.botao-excluir{
+    font-size: 0.6rem;
+    padding: 1px;
+    color: #767b7b;
+    background-color: var(--color-lista);
+    border: none;
+
+}
+/*estilizando lista com os nomes dos participantes*/
+.item-amigo{
+    display: flex;
+    justify-content: space-between; /*vai fazer com que o nome à esquerda, fique botão à direita */
+    align-items: center;
+    padding: 3px 2px;
+    gap: 5px;
+    border-bottom: 1px solid #ccc; /* Linha separadora */
+    width: 100%; /* Essa largura fixa para é evitar desorganização */
+    background-color: var(--color-lista);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444444;
+}
