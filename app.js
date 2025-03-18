@@ -16,3 +16,31 @@ function adicionarAmigo(){
   campoAmigo.focus();
   atualizarListaDeAmigos();
 }
+
+//Essa função vai atualizar os nomes na lista e vai colocar eles na tela usando a tag <li>
+function atualizarListaDeAmigos() {
+  let listaAmigos = document.getElementById('listaAmigos');
+  listaAmigos.innerHTML = ''; //Limpa a lista antes de adicionar para que não haja nomes duplicados
+
+  for (let i = 0; i <  amigos.length; i++) {
+    let nomeItem = document.createElement('li');
+    nomeItem.classList.add('item-amigo');
+    nomeItem.textContent = amigos[i];
+
+    let botaoRemover = document.createElement('button');
+    botaoRemover.textContent = '❌';
+    botaoRemover.classList.add('botao-excluir');//criando uma classe para o elemento button
+    botaoRemover.onclick = function(){
+      removerAmigo(i);
+    };
+    nomeItem.appendChild(botaoRemover);
+    listaAmigos.appendChild(nomeItem);
+    
+  }
+}
+//essa função é para que o usuario consiga remover os amigos da lista 
+function removerAmigo(index){
+  amigos.splice(index,1);
+  atualizarListaDeAmigos();
+}
+
