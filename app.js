@@ -43,4 +43,14 @@ function removerAmigo(index){
   amigos.splice(index,1);
   atualizarListaDeAmigos();
 }
-
+//A função vai realizar o sorteio dos nomes
+function sortearAmigo() {
+  if (amigos.length < 3) {
+    alert('Por favor, insira no mínimo 3 amigos!');
+    return;
+  }
+  if (sorteados.length === amigos.length) {
+    alert('Todos os amigos já foram sorteados!');
+    return;
+  }
+}
