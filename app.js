@@ -63,7 +63,7 @@ function sortearAmigo() {
   let resultadoSorteio = document.getElementById('resultado');
   resultadoSorteio.textContent = `🎁O amigo sorteado foi: ${amigoSorteado}`;
   atualizarListaDeAmigos();
-
+  document.getElementById('listaAmigos').innerHTML = '';
 }
 
 
