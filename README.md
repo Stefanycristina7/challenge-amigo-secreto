@@ -41,6 +41,13 @@ Este projeto foi desenvolvido como parte do **Challenge ONE** do grupo G8, com o
 
 ![Prévia do Projeto com nome sorteado](./assets/challenge-sorteio.png)
 
+## 🎮 Acesse o Projeto Online
+
+Você pode testar o projeto diretamente através do link abaixo:
+
+[🔗 Amigo Secreto - Challenge ONE G8](https://challenge-amigo-secreto-eight-kohl.vercel.app/)
+
+
 ## 📌 Como Executar o Projeto
 
 1. Clone este repositório para sua máquina:
